@@ -1,0 +1,350 @@
+    /* version 14.02.24 */
+    /* board */
+    #board-single, .fade-in-overlay {background-image: url('https://i123.fastpic.org/big/2024/0210/bc/350de808e3eb7aa58596a3c8aee4ecbc.jpeg');}
+
+    /* figures */
+
+    /* white king*/
+    #board-single .piece.wk, #board-single .promotion-piece.wk {
+            background-image: url('https://i123.fastpic.org/big/2024/0210/40/a2792e81653d4d1f857053f897c41840.png');
+          }
+
+    /* white queen*/
+    #board-single .piece.wq, #board-single .promotion-piece.wq {
+            background-image: url('https://i123.fastpic.org/big/2024/0210/37/b2da81f3697bd07fdace203f4eb00237.png');
+          }
+
+    /* white rook*/
+    #board-single .piece.wr, #board-single .promotion-piece.wr {
+            background-image: url('https://i123.fastpic.org/big/2024/0210/13/09695935500d35e57f0a0e917fc3be13.png');
+          }
+
+    /* white king*/
+    #board-single .piece.wb, #board-single .promotion-piece.wb {
+            background-image: url('https://i123.fastpic.org/big/2024/0210/27/4cc852893bdfa9c9d3d5ceb1083fc027.png');
+          }
+    
+    /* white knight*/
+    #board-single .piece.wn, #board-single .promotion-piece.wn {
+            background-image: url('https://i123.fastpic.org/big/2024/0210/e2/6021c40e3434fd8b521573c324d195e2.png');
+          }
+
+    /* white pawn*/
+    #board-single .piece.wp, #board-single .promotion-piece.wp {
+            background-image: url('https://i123.fastpic.org/big/2024/0210/d8/310f8422c2e2fe5f206d1d6fd253b4d8.png');
+          }
+
+    /* black king*/
+    #board-single .piece.bk, #board-single .promotion-piece.bk {
+            background-image: url('https://i123.fastpic.org/big/2024/0210/df/868fe2c70ae8e944f60ca14c9b6e14df.png');
+          }
+
+    /* black queen*/
+    #board-single .piece.bq, #board-single .promotion-piece.bq {
+            background-image: url('https://i123.fastpic.org/big/2024/0210/d8/e5a364ff6d364ff60c56e99cadea27d8.png');
+          }
+
+    /* black rook*/
+    #board-single .piece.br, #board-single .promotion-piece.br {
+            background-image: url('https://i123.fastpic.org/big/2024/0210/20/ec2542a17ce90befbb30e0ed3fe3ff20.png');
+          }
+
+    /* black bishop*/
+    #board-single .piece.bb, #board-single .promotion-piece.bb {
+            background-image: url('https://i123.fastpic.org/big/2024/0210/f3/367e98b8dd079d7d6db528e7065bd8f3.png');
+          }
+
+    /* black knight*/
+    #board-single .piece.bn, #board-single .promotion-piece.bn {
+            background-image: url('https://i123.fastpic.org/big/2024/0210/2d/941ffc2068a33e62418bf18da16cf22d.png');
+          }
+
+    /* black pawn*/
+    #board-single .piece.bp, #board-single .promotion-piece.bp {
+            background-image: url('https://i123.fastpic.org/big/2024/0210/bd/1c04520941e5b15066752ce6748f3ebd.png');
+          }
+
+
+    /* all layout */
+
+    /* ❗❗❗ !important - overwrite functions */
+
+body {
+    /* рейтинг + */
+    .rating-score-change.rating-score-positive { color: #161412 !important; }
+
+    /* рейтинг - */
+    .rating-score-change.rating-score-negative { color: #161412 !important; }
+    
+    /* цвет имени игрока в дзен моде*/
+    .user-tagline-compact-theatre .user-tagline-compact-username { color: #161412 !important};
+
+    /* цвет имени не в дзен моде */
+    .user-username-white, .user-username-white:hover { color: #161412 !important};
+    
+    /* цвет рейтинга не в дзен моде */
+    .rating-score-rating { color: #161412 !important};
+    
+    /* картинка времени партии: пуля, блитц и тд */
+    .svg-color-icon-icon.svg-color-icon-bullet, .svg-color-icon-icon.svg-color-icon-lightning { background-image: url(''); }  
+    
+    /* цвет плашки и места в рейтинге не в дзен моде */
+    .arena-score-component { background-color: #161412 !important ; color: #161412 !important; }
+    .arena-score-component .arena-score-place { color: #161412 !important; }
+    
+    /* флаг страны */ 
+    .country-flag-small, .country-flags-component { background-image: url(''); }
+        
+    /* цифры в ранке */
+    .game-over-arena-component .game-over-arena-place small.game-over-arena-negative, .game-over-arena-component .game-over-arena-score small.game-over-arena-negative {color: #262421 !important;}
+    
+    /* цифры в поп апе победы */
+    .game-over-arena-component .game-over-arena-place small, .game-over-arena-component .game-over-arena-score small { color: #262421 !important; }
+    
+    /* show your apreciation */
+    .flair-component { background: url('') !important; }
+}
+
+    /* цифры в поп апе победы */
+    .dark-mode .game-over-arena-component .game-over-arena-place strong, .dark-mode .game-over-arena-component .game-over-arena-score strong {color: #262421 !important ;}
+    /* points в поп апе на арене */
+    .dark-mode .game-over-arena-component .game-over-arena-place span, .dark-mode .game-over-arena-component .game-over-arena-score span { color: #262421 !important; }
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+    /* отображать посередине доску */
+
+body {
+    
+
+    /* отображать посередине доску */
+    grid-template-columns: [left-gutter] 2.3fr [extra-left] var(--extraColumnLeftOfBoard, 0) [board-layout] min-content [sidebar] minmax(var(--sidebarMinWidth),var(--sidebarMaxWidth))  1fr ;
+    
+    /* цвет бэкграунда */
+    --theme-background-color: #161412;  
+
+    /*цвет плашки со временем */
+    .clock-component.clock-white {  background-color:  #272523}; 
+
+    /*цвет плашки со временем */
+    .clock-component.clock-black {  background-color:  #313130}; 
+
+    /*цифры на плашке времени белых */
+    .clock-component.clock-white, .clock-component.clock-white span { color: #999393}; 
+
+    /*цифры на плашке времени черных */
+    .clock-component.clock-black, .clock-component.clock-black span { color: #cccccc};
+
+    /* убрать мелкую стрелку над и под временем */
+    .clock-arrow-arrow { border: 0rem };
+
+    /* размер аватарки  */
+    .player-component.player-theatre .player-avatar, .player-component.player-theatre .player-avatar>img {
+        border-radius: 0.3rem;
+        height: 0rem;
+        width: 0rem;
+         } 
+
+    /* game review (зеленая кпопка) */
+    .ui_v5-button-component.ui_v5-button-primary {  --bgColor: #2b2a2a};
+
+    /*Цвет текста на кнопке game review */
+    .ui_v5-button-component {  color: #9e9b9b};   
+        
+    .ui_v5-button-component { --boxShadowHover: #2b2a2a;}
+        
+    /* убрать зеленый shadow на next arena game */
+    .ui_v5-button-component.ui_v5-button-large {--boxShadowHover: currentColor;}
+
+    /* убрать зеленый цвет под кнопкой play */
+    .ui_v5-button-component.ui_v5-button-large { --borderHeight: 0rem};
+
+    /* цвет кнопки Play при наведенни на нее (hover) */
+    .ui_v5-button-component.ui_v5-button-primary { --bgHoverColor: #2b2a2a;}
+    
+    /* цвет пинга */
+    .connection-signal { background-color: #9e9b9b};
+
+    /* белые съеденные фигуры */
+    .captured-pieces-cpiece { background-image: url('https://i123.fastpic.org/big/2024/0210/73/06052df62cde0cd221e6a8bc2dad1a73.png')};
+
+    /* счетчик разницы в количестве фигур */
+    .captured-pieces-score { background-image: url("")}
+
+    /*mistakes button text color*/
+    .quick-analysis-tally-component .quick-analysis-tally-count.quick-analysis-tally-mistake { color: #9e9b9b};
+
+    /* цвет надписи mistakes */
+    .quick-analysis-tally-component .quick-analysis-tally-count.quick-analysis-tally-mistake span { background-color: #16141200};
+
+    /* цвет текста цифр на кнопках game review, blunder, misses*/
+    .quick-analysis-tally-component .quick-analysis-tally-count span { color: #9e9b9b};
+
+    /*blunder button text color*/
+    .quick-analysis-tally-component .quick-analysis-tally-count.quick-analysis-tally-blunder { color: #9e9b9b};
+
+    /* цвет надписи blunders */
+    .quick-analysis-tally-component .quick-analysis-tally-count.quick-analysis-tally-blunder span { background-color: #16141208};
+
+    /* цвет надписи missess */
+    .quick-analysis-tally-component .quick-analysis-tally-count.quick-analysis-tally-missedWin span {background-color: #16141200};
+
+    /* убрать зеленый цвет под кнопкой game review */
+    .game-over-review-button-component { height: 5.5rem};
+
+    /* цвет текста mistakes в поп апе*/
+    .game-over-quick-analysis-tally-component .game-over-quick-analysis-tally-item.game-over-quick-analysis-tally-mistake { color: #9e9b9b};
+
+    /* цвет картинок mistakes на поп апе */
+    .icon-background { fill: #9e9b9b}; 
+
+    /* цвет текста blunders в поп апе */
+    .game-over-quick-analysis-tally-component .game-over-quick-analysis-tally-item.game-over-quick-analysis-tally-blunder { color: #9e9b9b};
+
+    /* цвет текста misses в поп апе */ 
+    .game-over-quick-analysis-tally-component .game-over-quick-analysis-tally-item.game-over-quick-analysis-tally-missedwin { color: #9e9b9b};
+
+    /* цвет картинки misses в поп апе */
+    .cls-2 { fill: #9e9b9b};
+
+    /* misses button text color */
+    .quick-analysis-tally-component .quick-analysis-tally-count.quick-analysis-tally-missedWin { color: #9e9b9b};
+
+    /* цвет имени игрока в дзен моде*/
+    .user-tagline-compact-theatre .user-tagline-compact-username { color: #9e9b9b};
+
+    /* цвет имени не в дзен моде */
+    .user-username-white, .user-username-white:hover { color: #9e9b9b};
+
+    /* цвет рейтинга не в дзен моде */
+    .rating-score-rating { color: #9e9b9b};
+
+    /* картинка с кубоком победителя */
+    .svg-color-icon-icon.svg-color-icon-cup { background-image: url('')};
+
+    /* цвет хода в табличке при анализе */
+    .vertical-move-list .black.selected, .vertical-move-list .white.selected { color: #bcbcbc};    
+
+    /* рейтинг + */
+    .rating-score-change.rating-score-positive { color: #9e9b9b};
+
+    /* рейтинг - */
+    .rating-score-change.rating-score-negative { color: #9e9b9b};
+    
+    /* текст game review в поп апе */
+    .game-over-review-button-label { color: #9e9b9b;} 
+        
+    /* цвет текста при наведении на next game снизу справа не в дзен моде */
+    .ui_v5-button-component.ui_v5-button-primary.ui_v5-button-full { --textHoverColor: #9e9b9b; }
+        
+    /**/
+    .dark-mode .game-over-arena-component .game-over-arena-place span, .dark-mode .game-over-arena-component .game-over-arena-score span  { color: #9e9b9b};
+        
+    /* размер картинки с мечом и шлемом сбоку в турнире */
+    .ui_v5-button-component .ui_v5-button-icon { font-size: 0rem;}
+
+    /*цвет при наведении next arena game */
+    .ui_v5-button-component:not(.ui_v5-button-full)>span:not(.ui_v5-button-icon) {color: #9e9b9b}
+
+    .league-badge-component .league-badge-icon {             
+        height: 0rem;
+        width: 0rem;
+    }
+
+    /* цифры рейтинга в лиге */
+    .league-badge-component .league-badge-points { font-size: 0rem;}
+
+    /* цифры изменения рейтинга в лиге */
+    .league-score-change { font-size: 0rem;}
+    
+    /*timeout avatar */
+    .timeout-avatar-component .timeout-avatar-icon { font-size : 0rem;}
+    
+    /*  div class="hover-square и дальше номер квадрата - рамка вокруг квадрата на который наводишь мышку*/
+    rect{ stroke: #c23232;} /*fill : #c2323229 заливка внутри квадрата*/
+    
+    /*выделенные квадраты с прошлым ходом */
+    .highlight { background-color: #C23232 !important;  opacity: 0.5 !important; }
+    
+    /* стрелки объяснения */
+    .arrow { fill :#E8AB18C4 !important; opacity: .7 !important;}
+                
+    /* изменение цвета доски при анализе - наложенный оверлей */
+    .board.analysis-overlay:before { background: #47474717;}
+    
+    /* evalutation bar */
+    .evaluation-bar-bar .evaluation-bar-white { background-color: #9F9E9E;}
+    
+    /* значок online или нет в профиле */
+    .presence-square-component .presence-square-red { background: #6F1919;}
+    .presence-square-component .presence-square-green { background: #105304;}
+    
+    /* кнопка watch в профиле и при клике на имя во время игры */
+    .ui_v5-button-component.ui_v5-button-danger {
+    --bgColor: #20231d;
+    --bgHoverColor: #20231d;
+    --secondaryBorderColor: #20231d;
+    --borderBottomLine: #20231d;
+    --borderBottomLineHover: #20231d;
+    --innerBoxShadow: rgba(224, 40, 40, 0);
+    }
+    
+    /* кнопка challenge в профиле */
+    .presence-button-component .staffGreen { background: #20231d;}
+
+}
+
+/* ❗❗❗все что начинается с .dark-mode работает только само по себе, без body {} */
+
+    /* убирает нижнюю зеленую линию в game review сбоку ❗почему-то нужно это выражение вынести за общие скобки, внтури не работает ❗ */
+    .dark-mode .ui_v5-button-component.ui_v5-button-primary { 
+        --borderBottomLine: #000000;
+        --innerBoxShadow: rgba(42, 156, 21, 0);
+}
+    /*  текст draw в поп апе */
+    .dark-mode .game-over-header-component { color: #9e9b9b;}
+
+    /* цвет текста при наведении на rematch и new game */
+/*     .dark-mode .ui_v5-button-component.ui_v5-button-basic { --bgHoverColor: #373532; } */
+    .dark-mode .ui_v5-button-component.ui_v5-button-basic { --textHoverColor: #9e9b9b; }
+    
+    /* цвет при наведении на rematch и new game */
+    .dark-mode .ui_v5-button-component.ui_v5-button-basic { --bgHoverColor:#252525; }
+
+    /* points и rank в поп апе победы */
+    .dark-mode .game-over-arena-component .game-over-arena-place span, .dark-mode .game-over-arena-component .game-over-arena-score span  { color: #9e9b9b;}
+    .game-over-arena-component .game-over-arena-place small.game-over-arena-positive, .game-over-arena-component .game-over-arena-score small.game-over-arena-positive {color:#9e9b9b;}
+
+    /* цифры в поп апе победы */
+    .dark-mode .game-over-arena-component .game-over-arena-place strong, .dark-mode .game-over-arena-component .game-over-arena-score strong {color: #9e9b9b;}
+    
+    /* цифры в ранке */
+    .game-over-arena-component .game-over-arena-place small.game-over-arena-negative, .game-over-arena-component .game-over-arena-score small.game-over-arena-negative {color: #9e9b9b;}
+
+    /* мечи и шлем на поп апе победы */
+    .arena-icon-cls1 { fill: #ff272700;}
+    .arena-icon-cls2 { fill: #ff272700;}
+    .arena-icon-cls3 { fill: #ff272700;}
+    .arena-icon-cls4 { fill: #ff272700;}
+    .arena-icon-cls5 { fill: #ff272700;} 
+    .arena-icon-cls6 { fill: #ff272700;}
+        
+    /* цвет текста "поиск" во время поиска */
+    .dark-mode .game-over-arena-component .game-over-arena-button.game-over-arena-finding { color: #9e9b9b;}
+
+    /* Закрыть поп ап окончания игры на арене */
+    .dark-mode .game-over-header-component .game-over-header-close { color: #9e9b9b;}
+
+    /**/
+    .dark-mode .game-over-header-component.game-over-header-whiteWon { color: #9e9b9b;}
+
+    /* evalutaion bar цвет полосок у хода */
+    .dark-mode .vertical-move-list .time-white:after { background-color: #9e9b9b; }
+
+        
+        
+        
