@@ -1,0 +1,188 @@
+    /* version 19.12.24 */
+
+/*         /* board -не включать "dark board" в настройках*/
+    body[data-board=wood4] .is2d cg-board::before {
+    background-image: url(https://i123.fastpic.org/big/2024/0210/bc/350de808e3eb7aa58596a3c8aee4ecbc.jpeg);}
+
+    /* figures */
+
+    /* white king*/
+    .is2d .king.white { background-image: url('https://i123.fastpic.org/big/2024/0210/40/a2792e81653d4d1f857053f897c41840.png');}
+        
+    /* white queen*/
+    .is2d .queen.white { background-image: url('https://i123.fastpic.org/big/2024/0210/37/b2da81f3697bd07fdace203f4eb00237.png');}
+        
+    /* white rook*/
+    .is2d .rook.white { background-image: url('https://i123.fastpic.org/big/2024/0210/13/09695935500d35e57f0a0e917fc3be13.png');}
+        
+    /* white bishop*/
+    .is2d .bishop.white { background-image: url('https://i123.fastpic.org/big/2024/0210/27/4cc852893bdfa9c9d3d5ceb1083fc027.png');}
+        
+    /* white knight*/
+    .is2d .knight.white { background-image: url('https://i123.fastpic.org/big/2024/0210/e2/6021c40e3434fd8b521573c324d195e2.png');}
+        
+    /* white pawn*/
+    .is2d .pawn.white { background-image: url('https://i123.fastpic.org/big/2024/0210/d8/310f8422c2e2fe5f206d1d6fd253b4d8.png');}
+        
+    /* white king*/
+    .is2d .king.black { background-image: url('https://i123.fastpic.org/big/2024/0210/df/868fe2c70ae8e944f60ca14c9b6e14df.png');}
+        
+    /* white queen*/
+    .is2d .queen.black { background-image: url('https://i123.fastpic.org/big/2024/0210/d8/e5a364ff6d364ff60c56e99cadea27d8.png');}
+
+    /* white rook*/
+    .is2d .rook.black { background-image: url('https://i123.fastpic.org/big/2024/0210/20/ec2542a17ce90befbb30e0ed3fe3ff20.png');}
+        
+    /* white bishop*/
+    .is2d .bishop.black { background-image: url('https://i123.fastpic.org/big/2024/0210/f3/367e98b8dd079d7d6db528e7065bd8f3.png');}
+        
+    /* white knight*/
+    .is2d .knight.black { background-image: url('https://i123.fastpic.org/big/2024/0210/2d/941ffc2068a33e62418bf18da16cf22d.png');}
+        
+    /* white pawn*/
+    .is2d .pawn.black { background-image: url('https://i123.fastpic.org/big/2024/0210/bd/1c04520941e5b15066752ce6748f3ebd.png');}
+        
+
+
+
+
+
+body {
+        
+    /* цвет бэкграунда */
+    background: #161412;
+    
+    /* цвет основного текста*/
+    color: #9e9b9b;
+    
+    /* вторичный цвет текста : "найти другого соперника", "анализировать партию" кнопки вперед, назад и тд. */
+    .fbt { color: #9e9b9b;}
+    
+    /* цвет последнего хода */
+    square.last-move { background-color: #C23232; opacity: 0.5 !important;}
+    
+    /* чвет плашки у кончающегося времени */
+    .rclock.emerg .time, .rclock.outoftime .time { background-color: #272523;}   
+    
+    /* time size */
+    .rclock .time { 
+        background-color : #161412;
+        color : #9e9b9b;
+        font-size: 7em;
+    }
+    
+    /* */
+    .rclock.running .time {
+        background-color : #161412;
+        color : #9e9b9b;
+    }
+    
+    /* time (progress) bar*/
+    .rclock .bar {background : #e68f00;}
+
+    /* табличка "режим дзен - убрать" */
+    .text.fbt.active { display: none;}
+    
+    /* right click - оранжевый цвет стрелки для показа ходов */
+    line[stroke="#15781B"] {
+        stroke: #e68f00 ;}
+    path[fill="#15781B"] 
+    {
+        stroke: #e68f00 ;
+        stroke-width: 0.15625;
+        fill : #e68f00;
+    }
+    circle[stroke="#15781B"] {
+        stroke: #e68f00 ; }
+    
+    /* alt+right click - оранжевый цвет стрелки для показа ходов */
+    line[stroke="#003088"] {
+        stroke: #15781b !important;}
+    path[fill="#003088"] 
+    {
+        stroke: #15781b !important;
+        stroke-width: 0.15625;
+        fill : #15781b;
+    }
+    circle[stroke="#003088"] {
+        stroke: #15781b !important; }
+    
+    /* shift+right click - оранжевый цвет стрелки для показа ходов */
+    line[stroke="#882020"] {
+        stroke: #003088 ;}
+    path[fill="#882020"] 
+    {
+        stroke: #003088 !important;
+        stroke-width: 0.15625;
+        fill : #003088;
+    }
+    circle[stroke="#882020"] {
+        stroke: #003088 !important; }
+    
+    /* shift+alt+right click - оранжевый цвет стрелки для показа ходов */
+    line[stroke="#e68f00"] {
+        stroke: #882020 !important;}
+    path[fill="#e68f00"] 
+    {
+        stroke: #882020 !important;
+        stroke-width: 0.15625;
+        fill : #882020;
+    }
+    circle[stroke="#e68f00"] {
+        stroke: #882020 !important; }
+    
+    
+    /*цвет подложки правой панели*/
+    .puzzle__feedback { background: #161412;}
+    
+    /* кнопка посмотреть решение */
+    .button.button-empty  { visibility: hidden;}
+    .button.button-empty:before { content: "???";
+        font-size : 2rem;
+        visibility: visible;
+        display: block;
+        color: #1D1E3C;
+    }
+    
+    /* нижяя полоска в подложке задача решена */
+    .puzzle__feedback.after .puzzle__more { display: none;}
+    
+    /* верхняя плашка в подложке задача решена */
+    .ceval {background : #161412;}
+    
+    /*  отображать чей ход */
+    .puzzle__feedback .no-square { 
+        flex: 0 0 70px;
+        height: 70px;
+        margin-right: 0px;
+    }
+    
+    /* цвет того кто ходит */
+    .no-square .king.white  { background-image: url('https://i123.fastpic.org/big/2024/0220/0b/5d39d469b94062adb533545367fda40b.png');}
+    .no-square .king.black  { background-image: url('');}
+    
+    /* точки куда передвинуть фигуру */
+     square.move-dest {
+        background: radial-gradient(rgb(7 62 141 / 50%) 19%, rgba(0, 0, 0, 0) 20%);}
+    /* цвет места куда поставить фигуру */
+     square.oc.move-dest { 
+        background: radial-gradient(transparent 0%, transparent 79%, rgb(59 79 105) 80%);}
+    /* цвет квадрата двигаемой фигуры */
+    square.selected {
+        background-color: rgb(57 77 104);} 
+    
+    /* описание что мой ход */
+    .instruction { display: none;}
+    
+    /* стриимы */
+    .lobby__streams {display : none; } 
+    
+    /*vote up and down */
+    .puzzle__vote__buttons.enabled { display: none;}
+    
+     
+}
+
+    
+
+
