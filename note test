@@ -1,0 +1,78 @@
+https://musophone.com/tests-new/?exercise=10
+
+/* 28 02 2024 */
+body {
+    
+    /* цвет бэка */
+    background-color: #1C1A17;
+    
+    /*  input device color */
+    .jq-selectbox__select { 
+        background: #1C1A17;
+        border: 1px;
+        color: #1C1A17;
+        }
+    
+    /* цвет таблички с количеством пройденого*/
+    #streakbox { background: #626060;}
+    
+    /* цвет подложки нот */
+    #target {background-color: #807e7d !important;
+            opacity : 1 !important;
+        }
+    
+    /* цвет клавиш пианино */
+    ul#piano li a, ul#piano li div.anchor {background:  #8F8D8D; }
+    
+    /* текст : кликните на кнопку */
+    .help-text {color: #1C1A17;
+        border-top: 0px;
+        border-bottom: 0px;
+    }
+    
+    /* цвет стрелки у выбора input device */
+    .jq-selectbox__trigger-arrow { border-top: 0px;}
+        
+    /* кнопка с переходом на сайт */
+    #wrapper a.default-look  { display: none !important;}
+    
+    /* рамка вокруг нот с ошибкой */
+    #target-wrapper.error #target { 
+        box-shadow: none;
+        border: 2px solid #807e7d;
+    }
+    /* прозрачность крестика ошибки*/ 
+    #target-wrapper.error .eror-image { opacity: .4;}
+    
+    /* */
+    #target-wrapper.success #target { 
+        box-shadow: none;
+        border: 2px solid #807e7d;
+    }
+    
+    /* прозрачность галочки верного ответа */
+    #target-wrapper.success .success-image { opacity: .4;}
+    
+    /* цвет окончания */
+    #end-screen { background-color: #1C1A17;}
+    
+    /* цвет на окончании */
+    #responsetime { color: #9e9b9b;
+    font-size: 50px;
+    }
+    
+    /* цвет на окончании */
+    #besttime { color: #9e9b9b;
+        display: grid;
+        font-size: 20px;
+        line-height: 100px;}
+    
+    /* линк начать сначала */
+    #wrapper #end-screen .help-text a, #wrapper #end-screen .help-text a:visited, #wrapper #end-screen .help-text a:active { 
+        color: #9e9b9b;
+        font-size: 55px;
+        line-height: 310px;
+        display: grid;
+        text-decoration: none;
+    }    
+}
