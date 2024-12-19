@@ -1,0 +1,107 @@
+/* 01 03 2024 */
+
+/* text font size ❗*/
+body, td, th, a, dd { font-size: 25px; }
+
+/* ======== ❗ включать если надо сделать большие буквы и отключать строчку выше ❗ ======== */
+
+/* размер инфы про тональность - ❗ но табличка с аккордами разъезжается в стороны*/
+/* #scale_info_con { width: 700px;} */
+
+/* font size*/
+/* body, td, th, a, dd { font-size: 40px; } */
+
+/* ===========================================================================================*/
+
+/* цвет фона аккордов в тональности */
+.scale_chord_tr > td > button {background-color: #7f5b0f;}
+
+/* цвет бэка */
+.info_con { background-color: #181A1B; } 
+
+/*цвет текста*/
+body, input, textarea, button, select, h1, h2 { color: #7b3737;}
+
+/* border*/
+.info_con { border: 0px ;}
+
+/* scale font size */
+h2 { font-size: 30px;}
+
+/* header color*/
+#page_header_con { background: #181A1B;}
+
+/* text color in header */
+a, a:link, a:visited { color: #9e9b9b;}
+
+/* site logo in header */
+#logo_con > a > img { display: none;}
+
+/**/
+#main_nav_list > li > a, #main_nav_list > li > a:link, #main_nav_list > li > a:visited {
+    background-color: #181A1B;
+    color: #9e9b9b;
+    border: 0px ;
+}
+
+/* footer */
+#page_footer {
+    border-top-color: #181A1B;
+    background-color: #181A1B;
+}
+
+/* =============== additional chord options ====================== */
+
+/* white key color */
+.white_key.in_chord, .white_key.in_chord.in_scale, .white_key.in_chord.in_scale.scale_root {
+/*     background-image: none; */
+    background: #006581;
+/*     color: #000000; */
+}
+/* white key root color */
+.white_key.in_chord.chord_root, .white_key.in_chord.chord_root.in_scale, .white_key.in_chord.chord_root.in_scale.scale_root {
+    background: #006581;
+    
+}
+/* black key root color*/
+.black_key.in_chord.chord_root, .black_key.in_chord.chord_root.in_scale, .black_key.in_chord.chord_root.in_scale.scale_root {
+    background: #006581;
+    
+}
+
+
+
+.black_key.in_chord, .black_key.in_chord.in_scale, .black_key.in_chord.in_scale.scale_root {
+    background: #006581;
+}
+
+/* ======================== additional scale options ================================ */
+
+/* white root key */
+.white_key.in_scale.scale_root { background: #006581;}
+
+/* black root key color and text */
+.black_key.in_scale.scale_root { background: #006581;
+color : #9e9b9b; 
+}
+
+/* other white keys in scale */
+.white_key.in_scale { background: #006581;}
+
+/* other black key in scale */
+.black_key.in_scale { background: #006581;}
+
+/* black key text color */
+.black_key.in_chord, .black_key.in_scale { color: #9e9b9b;;}
+
+/* white key shadow and border*/
+.white_key {
+    border: 1px solid #1E1E1E;
+    color : #9e9b9b;
+    background-color: #999797;
+}
+
+/* balck key shadow and border */
+.black_key { color : #9e9b9b;
+            border: 2px solid #030303;
+}
