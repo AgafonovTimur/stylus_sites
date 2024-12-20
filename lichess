@@ -1,4 +1,4 @@
-    /* version 19.12.24 */
+    /* version 20.12.24 */
 
 /*         /* board -не включать "dark board" в настройках*/
     body[data-board=wood4] .is2d cg-board::before {
@@ -83,6 +83,10 @@ body {
     /* табличка "режим дзен - убрать" */
     .text.fbt.active { display: none;}
     
+    /* checkmark on figure */
+    .main-board .cg-custom-svgs {display: none;}
+    
+    
     /* right click - оранжевый цвет стрелки для показа ходов */
     line[stroke="#15781B"] {
         stroke: #e68f00 ;}
@@ -144,11 +148,20 @@ body {
         color: #1D1E3C;
     }
     
-    /* нижяя полоска в подложке задача решена */
+/*     нижяя полоска в подложке задача решена */
     .puzzle__feedback.after .puzzle__more { display: none;}
+    .puzzle__feedback.after .complete { display: none;}
     
     /* верхняя плашка в подложке задача решена */
     .ceval {background : #161412;}
+    .ceval help {color : #161412;}
+    .ceval .technology.good {color : #161412;}
+    .ceval .settings-gear {color : #161412;}
+    .cmn-toggle--subtle:not(:checked)+label { background-color: #161412;}
+    .cmn-toggle--subtle:not(:checked)+label::before { color: #161412;}
+    .cmn-toggle--subtle:not(:checked)+label::before { background-color: #131313;}
+    .cmn-toggle+label { border: 1px solid #161412;}
+
     
     /*  отображать чей ход */
     .puzzle__feedback .no-square { 
@@ -178,11 +191,8 @@ body {
     .lobby__streams {display : none; } 
     
     /*vote up and down */
-    .puzzle__vote__buttons.enabled { display: none;}
+    .puzzle__vote { display: none;}
     
      
 }
-
-    
-
 
