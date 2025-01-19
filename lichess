@@ -1,4 +1,4 @@
-    /* version 20.12.24 */
+    /* version 19.01.24 */
 
 /*         /* board -не включать "dark board" в настройках*/
     body[data-board=wood4] .is2d cg-board::before {
@@ -62,7 +62,13 @@ body {
     square.last-move { background-color: #C23232; opacity: 0.5 !important;}
     
     /* чвет плашки у кончающегося времени */
-    .rclock.emerg .time, .rclock.outoftime .time { background-color: #272523;}   
+    .rclock.emerg .time, .rclock.outoftime .time { background-color: #272523;} 
+    
+    /* emerg time - red color when running out of time*/
+    .rclock.emerg.running .time { 
+        background-color: #2D2D2D;
+        color : #9e9b9b;
+    }
     
     /* time size */
     .rclock .time { 
@@ -78,7 +84,8 @@ body {
     }
     
     /* time (progress) bar*/
-    .rclock .bar {background : #e68f00;}
+/*     .rclock .bar {background : #422A02;} */
+    .rclock .bar {background : none;}
 
     /* табличка "режим дзен - убрать" */
     .text.fbt.active { display: none;}
@@ -192,6 +199,8 @@ body {
     
     /*vote up and down */
     .puzzle__vote { display: none;}
+    
+    #zenzone .zen-home {background: none}
     
      
 }
