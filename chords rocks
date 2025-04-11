@@ -97,11 +97,11 @@ color : #9e9b9b;
 /* white key shadow and border*/
 .white_key {
     border: 1px solid #1E1E1E;
-    color : #9e9b9b;
+    color : #424141;
     background-color: #999797;
 }
 
 /* balck key shadow and border */
-.black_key { color : #9e9b9b;
+.black_key { color : #7B7A7A;
             border: 2px solid #030303;
 }
