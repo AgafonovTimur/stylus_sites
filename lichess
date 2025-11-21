@@ -1,4 +1,4 @@
-    /* version 19.01.24 */
+    /* version 21.11.25 */
 
 /*         /* board -не включать "dark board" в настройках*/
     body[data-board=wood4] .is2d cg-board::before {
@@ -74,7 +74,7 @@ body {
     .rclock .time { 
         background-color : #161412;
         color : #9e9b9b;
-        font-size: 7em;
+        font-size: 12em;
     }
     
     /* */
@@ -92,6 +92,9 @@ body {
     
     /* checkmark on figure */
     .main-board .cg-custom-svgs {display: none;}
+    
+    /* hide engine title */
+    .engine {display:none;}
     
     
     /* right click - оранжевый цвет стрелки для показа ходов */
