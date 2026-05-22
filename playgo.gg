@@ -19,7 +19,6 @@
     button.flex:nth-child(4) { display: none;}
     div.hidden > div:nth-child(1) > button:nth-child(2) { display: none;}
     div.hidden > div:nth-child(1) > button:nth-child(3) { display: none;}
-    div.mb-2:nth-child(3) { display: none;}
     div.mt-0\.5:nth-child(1) { display: none;}
     
 
