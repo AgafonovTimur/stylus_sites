@@ -1,0 +1,27 @@
+    /* version 22.05.26 */
+
+    nav.fixed { display: none;}
+    button.px-2:nth-child(3) { display: none;}
+    div.gap-2:nth-child(3) > div:nth-child(4){ display: none;}
+    button.px-2:nth-child(5) { display: none;}
+    div.relative:nth-child(6) { display: none;}
+    div.mt-2:nth-child(4) { display: none;}
+    div.border-t:nth-child(2) { display: none;}
+    p.text-sm { display: none;}
+
+    button.p-1\.5:nth-child(2) { display: none;}
+    div.mt-0\.5:nth-child(1) > div:nth-child(3) { display: none;}
+
+    button.p-1\.5:nth-child(4) { display: none;}
+    div.mt-0\.5:nth-child(1) > div:nth-child(5) { display: none;}
+    div.mb-3:nth-child(2) { display: none;}
+    div.hidden > div:nth-child(2) { display: none;}
+    button.flex:nth-child(4) { display: none;}
+    div.hidden > div:nth-child(1) > button:nth-child(2) { display: none;}
+    div.hidden > div:nth-child(1) > button:nth-child(3) { display: none;}
+    div.mb-2:nth-child(3) { display: none;}
+    div.mt-0\.5:nth-child(1) { display: none;}
+    
+
+
+
