@@ -1,0 +1,5 @@
+body {
+
+  article[data-pid="295878"] {  display: none;}
+    
+}
